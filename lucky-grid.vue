@@ -110,6 +110,12 @@
         const dpr = this.dpr = uni.getSystemInfoSync().pixelRatio
         console.log(dpr)
         const $lucky = this.$lucky = new LuckyGrid({
+          // #ifdef H5
+          flag: 'UNI-H5',
+          // #endif
+          // #ifdef MP
+          flag: 'UNI-MINI-WX',
+          // #endif
           ctx: ctx,
           width: this.width,
           height: this.height,

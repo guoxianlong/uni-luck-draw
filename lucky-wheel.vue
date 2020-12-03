@@ -82,6 +82,12 @@
         const ctx = this.ctx = uni.createCanvasContext('lucky-wheel', this)
         const dpr = this.dpr = uni.getSystemInfoSync().pixelRatio
         const $lucky = this.$lucky = new LuckyWheel({
+          // #ifdef H5
+          flag: 'UNI-H5',
+          // #endif
+          // #ifdef MP
+          flag: 'UNI-MINI-WX',
+          // #endif
           ctx: ctx,
           width: this.width,
           height: this.height,
