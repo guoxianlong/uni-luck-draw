@@ -1,8 +1,8 @@
 <template>
-	<view v-if="isShow" class="lucky-box" :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }">
+  <view v-if="isShow" class="lucky-box" :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }">
     <canvas :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }" canvas-id="lucky-wheel" id="lucky-wheel"></canvas>
     <view class="lucky-wheel-btn" @click="toPlay" :style="{ width: btnWidth + 'px', height: btnHeight + 'px' }"></view>
-	</view>
+  </view>
 </template>
 
 <script>
