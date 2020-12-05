@@ -1,5 +1,5 @@
 <template>
-	<view v-if="isShow" class="lucky-box" :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }">
+  <view v-if="isShow" class="lucky-box" :style="{ width: boxWidth + 'px', height: boxHeight + 'px' }">
     <canvas
       id="lucky-grid"
       canvas-id="lucky-grid"
@@ -11,7 +11,7 @@
       width: btnWidth + 'px',
       height: btnHeight + 'px',
     }"></view>
-	</view>
+  </view>
 </template>
 
 <script>
@@ -186,10 +186,8 @@
     position: relative;
     overflow: hidden;
   }
-  canvas {
+  .lucky-box canvas {
     position: absolute;
-    left: 0;
-    top: 0;
   }
   .lucky-grid-btn {
     position: absolute;
