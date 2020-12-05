@@ -152,7 +152,7 @@
   .lucky-box {
     position: relative;
   }
-  canvas {
+  .lucky-box canvas {
     position: absolute;
   }
   .lucky-wheel-btn {
